@@ -1,0 +1,263 @@
+nav {
+    background-color: #85E6C5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-bar input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+nav .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.top-ngos {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.ngo-logo {
+    flex: 0 0 auto;
+    /* Prevent logos from growing and allow them to have fixed width */
+    margin: 0 50px;
+    /* Add horizontal margin for space between logos */
+}
+
+.ngo-logo img {
+    max-height: 80px;
+    width: auto;
+}
+
+.ngo-logos-slider {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.ngo-logos-slider img {
+    max-height: 80px;
+    width: auto;
+    margin: 0 50px;
+}
+
+.separator {
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+body {
+    background-image: url("background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    /* ... previous styles ... */
+    padding: 15px 30px;
+    /* Increase the button size */
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Increase the font size */
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    width: 200px;
+    /* Set a fixed width for the buttons */
+    background-color: #007BFF;
+    /* Set default background color for buttons */
+    color: white;
+}
+
+.button.ngo {
+    background-color: #007BFF;
+    font-weight: 700;
+    color: white;
+}
+
+.button.donor {
+    background-color: #00B300;
+    font-weight: 700;
+    color: white;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    /* Darken the background color on hover */
+}
+
+.button.fill {
+    background-color: transparent;
+    /* Set initial background color for fill buttons */
+    border: 2px solid #007BFF;
+    /* Add a border to the fill buttons */
+    color: black;
+    /* Set text color for fill buttons */
+}
+
+.button.fill.ngo {
+    border-color: #007BFF;
+    /* Keep the same border color for 'NGO' fill button */
+}
+
+.button.fill.donor {
+    border-color: #00B300;
+    /* Set a different border color for 'Donor' fill button */
+}
+
+.button.fill.donor:hover {
+    background-color: #00B300;
+    /* Change background color to the same color as the border on hover */
+    color: white;
+}
+
+.button.fill.donor:ngo {
+    background-color: #00B300;
+    /* Change background color to the same color as the border on hover */
+    color: white;
+}
+
+.button.fill:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Sliding bar styling */
+
+.sliding-bar {
+    background-color: #FFD700;
+    /* Set the background color */
+    color: #333;
+    /* Set text color */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 10;
+    left: 50%;
+    /* Position from the center */
+    transform: translateX(-50%);
+    /* Center horizontally */
+    width: 90%;
+    /* Adjust the width as needed */
+    z-index: 1000;
+    /* Ensure it's above other elements */
+    animation: slide-down 0.5s ease-in-out;
+    /* Slide-down animation */
+}
+
+.sliding-bar img {
+    max-height: 40px;
+    /* Adjust the maximum height of the images */
+    margin: 0 10px;
+    /* Add spacing between images and other elements */
+    transition: transform 0.3s ease-in-out;
+    /* Add a smooth transition */
+}
+
+.sliding-bar img:hover {
+    transform: scale(1.2);
+    /* Enlarge the image on hover */
+}
+
+.ngo-logos-slider {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 0;
+    /* ... other existing styles ... */
+    transition: transform 5s ease-in-out;
+    /* Adjust the transition duration for a slower effect */
+}
+
+.ngo-logos-slider:hover {
+    transform: translateX(-100%);
+    /* Slide the content to the left on hover */
+}

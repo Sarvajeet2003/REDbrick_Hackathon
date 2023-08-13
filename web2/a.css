@@ -1,0 +1,109 @@
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Style the checkbox group */
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+
+/* Style the label and checkbox */
+
+label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+/* Add this to your existing CSS */
+
+.checkbox-form {
+    text-align: center;
+    margin: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Color scheme */
+
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #00BFFF;
+    --text-color: #333333;
+    --background-color: #f5f5f5;
+}
+
+
+/* Style the checkbox group */
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+
+/* Style the label and checkbox */
+
+label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+/* Add this to your existing CSS */
+
+.checkbox-form {
+    text-align: center;
+    margin: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}

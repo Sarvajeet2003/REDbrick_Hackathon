@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.10.0",
+    "@tensorflow/tfjs-node": "^4.10.0",
+    "keras-js": "^1.0.3",
+    "ml-regression": "^5.0.0",
+    "regression": "^2.0.1"
+  }
+}
